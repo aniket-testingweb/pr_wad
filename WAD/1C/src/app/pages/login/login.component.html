@@ -1,0 +1,17 @@
+<div class="main">
+    <form *ngIf="isLogin" class="signup">
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="email" name="email" [(ngModel)]="loginObj.email" placeholder="Email" required="">
+        <input type="password" name="pswd" [(ngModel)]="loginObj.password" placeholder="Password" required="">
+        <button (click)="register()">Sign up</button>
+        <p>Already a User? <span class="link" (click)="toggle()">Login</span></p>
+    </form>
+
+    <form *ngIf="!isLogin" class="signup">
+        <label for="chk" aria-hidden="true">Login</label>
+        <input type="email" name="EmailId" [(ngModel)]="loginObj.email" placeholder="Email" required="">
+        <input type="password" name="Password" [(ngModel)]="loginObj.password" placeholder="Password" required="">
+        <button (click)="onLogin()">Login</button>
+        <p>Not a User? <span class="link" (click)="toggle()">Register</span></p>
+    </form>
+</div>

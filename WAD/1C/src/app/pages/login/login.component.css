@@ -1,0 +1,23 @@
+.signup {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 1rem;
+	gap: 15px;
+	width: fit-content;
+}
+
+.main {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.link {
+	cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
