@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home | JQuery Mobile Website</title>
+
+   <!-- jQuery Mobile CSS -->
+   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+   <!-- Your External CSS -->
+   <link rel="stylesheet" href="style.css" />
+
+   <!-- jQuery & jQuery Mobile JS -->
+   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+   <!-- Your External JS -->
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- ========== HOME PAGE ========== -->
+<div data-role="page" id="home">
+   <div data-role="header" data-theme="b">
+       <h1>JQuery</h1>
+   </div>
+
+   <div data-role="navbar" data-grid="c">
+       <ul>
+           <li><a href="#home" class="ui-btn-active">Home</a></li>
+           <li><a href="#aboutus">About Us</a></li>
+           <li><a href="#products">Products</a></li>
+           <li><a href="#loginregister">Login/Register</a></li>
+       </ul>
+   </div>
+
+   <div class="content">
+       <center><h3>Products</h3></center>
+
+       <center>
+           <div class="product-grid">
+               <img src="1.jpg" alt="Product" class="product-img">
+               <img src="1.jpg" alt="Product" class="product-img">
+               <img src="1.jpg" alt="Product" class="product-img">
+           </div>
+
+           <div class="product-grid">
+               <img src="1.jpg" alt="Product" class="product-img">
+               <img src="1.jpg" alt="Product" class="product-img">
+               <img src="1.jpg" alt="Product" class="product-img">
+           </div>
+
+           <div class="product-grid">
+            <img src="1.jpg" alt="Product" class="product-img">
+            <img src="1.jpg" alt="Product" class="product-img">
+            <img src="1.jpg" alt="Product" class="product-img">
+        </div>
+
+        <div class="product-grid">
+            <img src="1.jpg" alt="Product" class="product-img">
+            <img src="1.jpg" alt="Product" class="product-img">
+            <img src="1.jpg" alt="Product" class="product-img">
+       </center>
+   </div>
+
+   <div data-role="footer" data-theme="b">
+       <center>
+           <div class="quicklinks">
+               <h3>Quick Links</h3>
+               <a href="#home">Home</a><br><br>
+               <a href="#aboutus">About Us</a><br><br>
+               <a href="#products">Products</a><br><br>
+               <a href="#loginregister">Login/Register</a><br><br>
+           </div>
+           <p>COPYRIGHTS 2025 | JQUERY, ALL RIGHTS RESERVED</p>
+       </center>
+   </div>
+</div>
+
+<!-- ========== ABOUT US PAGE (empty for now, you can add if needed) ========== -->
+<div data-role="page" id="aboutus">
+   <div data-role="header" data-theme="b">
+       <h1>About Us</h1>
+   </div>
+
+   <div data-role="navbar" data-grid="c">
+       <ul>
+           <li><a href="#home">Home</a></li>
+           <li><a href="#aboutus" class="ui-btn-active">About Us</a></li>
+           <li><a href="#products">Products</a></li>
+           <li><a href="#loginregister">Login/Register</a></li>
+       </ul>
+   </div>
+
+   <div class="content">
+       <center><h3>About Our Company</h3></center>
+       <p style="text-align: center;">We are providing the best products through our online platform. Welcome to our family!</p>
+   </div>
+
+   <div data-role="footer" data-theme="b">
+       <center>
+           <p>COPYRIGHTS 2025 | JQUERY, ALL RIGHTS RESERVED</p>
+       </center>
+   </div>
+</div>
+
+<!-- ========== PRODUCTS PAGE (Already added in Home for now) ========== -->
+<div data-role="page" id="products"> 
+    <div data-role="header" data-theme="b"> 
+        <h1>Products</h1>
+    </div> 
+    
+    <div data-role="navbar" data-grid="c">
+         <ul>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#aboutus">About Us</a></li>
+             <li><a href="#products" class="ui-btn-active">Products</a></li>
+             <li><a href="#loginregister">Login/Register</a></li>
+         </ul>
+    </div>
+
+    <center><h3>Available Products</h3></center>
+
+    <div class="content" style="padding: 10px;"> 
+         <center>
+             <div class="rows">
+                 <div>
+                     <img src="1.jpg" height="200px" width="200px"><br>
+                     <h4>Smart Watch</h4>
+                     <p>₹2,999/- <br>Stylish, waterproof, and loaded with fitness features.</p>
+                 </div>
+                 <div>
+                     <img src="1.jpg" height="200px" width="200px"><br>
+                     <h4>Wireless Earbuds</h4>
+                     <p>₹1,499/- <br>Crystal clear sound with noise cancellation.</p>
+                 </div>
+                 <div>
+                     <img src="1.jpg" height="200px" width="200px"><br>
+                     <h4>Power Bank</h4>
+                     <p>₹999/- <br>10,000mAh with fast charging support.</p>
+                 </div>
+             </div>
+
+             <br>
+
+             
+
+             <div class="rows">
+                 <div>
+                     <img src="1.jpg" height="200px" width="200px"><br>
+                     <h4>HD Webcam</h4>
+                     <p>₹2,199/- <br>Perfect for meetings and streaming.</p>
+                 </div>
+                 <div>
+                     <img src="1.jpg" height="200px" width="200px"><br>
+                     <h4>Portable Hard Drive</h4>
+                     <p>₹4,499/- <br>1TB storage capacity with fast transfer speed.</p>
+                 </div>
+                 <div>
+                     <img src="1.jpg" height="200px" width="200px"><br>
+                     <h4>Smartphone Tripod</h4>
+                     <p>₹599/- <br>Adjustable, lightweight, and travel-friendly.</p>
+                 </div>
+             </div>
+         </center>    
+     </div>
+
+    <div data-role="footer" data-theme="b">
+       <center>
+       <div class="quicklinks">
+           <h3>Quick Links</h3>
+           <a href="#home">Home</a><br><br>
+           <a href="#aboutus">About Us</a><br><br>
+           <a href="#products">Products</a><br><br>
+           <a href="#loginregister">Login/Register</a><br><br>
+        </div>
+        <p>COPYRIGHTS 2025 | JQUERY, ALL RIGHTS RESERVED</p>
+       </center>
+    </div>
+</div>
+
+<!-- ========== LOGIN / REGISTER PAGE ========== -->
+<div data-role="page" id="loginregister">
+   <div data-role="header" data-theme="b">
+       <h1>Login / Register</h1>
+   </div>
+
+   <div data-role="navbar" data-grid="c">
+       <ul>
+           <li><a href="#home">Home</a></li>
+           <li><a href="#aboutus">About Us</a></li>
+           <li><a href="#products">Products</a></li>
+           <li><a href="#loginregister" class="ui-btn-active">Login/Register</a></li>
+       </ul>
+   </div>
+
+   <div class="content">
+       <center><h2>Register</h2></center>
+
+       <div data-role="content">
+           <label>Full Name:</label>
+           <input type="text" placeholder="Enter your full name"><br>
+
+           <label>Address:</label>
+           <textarea cols="25" rows="5" placeholder="Enter your address"></textarea><br>
+
+           <label>Pincode:</label>
+           <input type="text" placeholder="Enter pincode"><br>
+
+           <label>Date of Birth:</label>
+           <input type="date"><br>
+
+           <label>Email Id:</label>
+           <input type="email" placeholder="Enter email"><br>
+
+           <label>Password:</label>
+           <input type="password" placeholder="Enter password"><br>
+
+           <label>Confirm Password:</label>
+           <input type="password" placeholder="Confirm password"><br>
+
+           <center><a href="#" class="ui-btn ui-btn-b">Register</a></center>
+       </div>
+   </div>
+
+   <div data-role="footer" data-theme="b">
+       <center>
+           <div class="quicklinks">
+               <h3>Quick Links</h3>
+               <a href="#home">Home</a><br><br>
+               <a href="#aboutus">About Us</a><br><br>
+               <a href="#products">Products</a><br><br>
+               <a href="#loginregister">Login/Register</a><br><br>
+           </div>
+           <p>COPYRIGHTS 2025 | JQUERY, ALL RIGHTS RESERVED</p>
+       </center>
+   </div>
+</div>
+
+</body>
+</html>

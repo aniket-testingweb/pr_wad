@@ -1,0 +1,36 @@
+/* style.css */
+
+/* Centered product grid */
+.product-grid {
+    margin: 20px 0;
+}
+
+/* Product images */
+.product-img {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer quick links */
+.quicklinks a {
+    text-decoration: none;
+    color: #0074D9;
+    font-weight: bold;
+}
+
+.quicklinks a:hover {
+    color: #0056b3;
+}
+
+/* General content padding */
+.content {
+    padding: 15px;
+}

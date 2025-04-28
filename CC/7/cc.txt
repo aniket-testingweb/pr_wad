@@ -1,0 +1,40 @@
+muskanpatil553854@agentforce.com
+
+
+Steps to Design and Develop a Custom Application in Salesforce Cloud:
+
+1. Access Salesforce Cloud:
+   - Go to developer.salesforce.com.
+   - Sign up for a new account or log in.
+
+2. Explore the Salesforce Interface:
+   - Familiarize yourself with the app launcher, setup menu, object manager, settings, and profile options.
+
+3. Create Objects (Tables):
+   - Navigate to the Object Manager.
+   - Create custom objects (e.g., Student, Book) to store your application's data.
+   - Define object properties like labels and descriptions.
+   - Note that custom object names end with "_c".
+
+4. Add Fields (Columns) to Objects:
+   - For each object, add fields to define the data it will hold (e.g., Author, Publisher for the Book object; Name, Email for the Student object).
+   - Choose appropriate data types for each field (e.g., Text, Email, Number).
+   - Configure field properties like length, description, and whether it's required or unique.
+
+5. Create Tabs:
+   - Go to "Setup" and find "Tabs".
+   - Create tabs for your custom objects to make them accessible within the application.
+   - Select a style for your tabs.
+
+6. Create the App:
+   - In "Setup," find "App Manager".
+   - Create a new Lightning App.
+   - Give your app a name and description (e.g., "Library Management System").
+   - Optionally, add a logo.
+   - Choose the supported form factors (desktop and/or phone).
+   - Include the tabs you created in your app.
+   - Set user profile access for the app.
+
+7. Access and Test Your Application:
+   - Find your newly created application using the App Launcher.
+   - Test the application by adding records to your custom objects through the created tabs.
