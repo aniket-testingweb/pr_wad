@@ -1,0 +1,42 @@
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the number of processes
+        System.out.print("Enter the number of processes: ");
+        int n = scanner.nextInt();
+
+        List<process> processes = new ArrayList<>();
+
+        // Get the process details (ID, Arrival Time, Burst Time)
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter Process ID: ");
+            int id = scanner.nextInt();
+            System.out.print("Enter Arrival Time: ");
+            int arrivalTime = scanner.nextInt();
+            System.out.print("Enter Burst Time: ");
+            int burstTime = scanner.nextInt();
+            processes.add(new process(id, arrivalTime, burstTime));
+        }
+
+        // Ask user for scheduling choice
+        System.out.println("Choose the scheduling algorithm:");
+        System.out.println("1. SJF (Shortest Job First)");
+        System.out.println("2. Round Robin");
+        int choice = scanner.nextInt();
+
+        if (choice == 1) {
+            // Run SJF
+            schedulingAlgorithm.sjf(processes);
+        } else if (choice == 2) {
+            // Ask for Time Quantum
+            System.out.print("Enter time quantum for Round Robin: ");
+            int timeQuantum = scanner.nextInt();
+            schedulingAlgorithm.roundRobin(processes, timeQuantum);
+        } else {
+            System.out.println("Invalid choice.");
+        }
+
+        scanner.close();
+    }
+}

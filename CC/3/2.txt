@@ -1,0 +1,50 @@
+package com.cloudism.scheduler;
+
+import java.util.List;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class schedulingAlgorithm {
+
+    // Shortest Job First (SJF) Scheduling
+    public static void sjf(List<process> processes) {
+        // Sort by burst time (Shortest Job First)
+        Collections.sort(processes, Comparator.comparingInt(process::getBurstTime));
+
+        System.out.println("SJF Scheduling Order:");
+        for (process p : processes) {
+            System.out.println("Process ID: " + p.getId() + ", Burst Time: " + p.getBurstTime());
+        }
+    }
+
+    // Round Robin Scheduling
+    public static void roundRobin(List<process> processes, int timeQuantum) {
+        Queue<process> queue = new LinkedList<>(processes);
+        int[] remainingTime = new int[processes.size()];
+        for (int i = 0; i < processes.size(); i++) {
+            remainingTime[i] = processes.get(i).getBurstTime();
+        }
+
+        int time = 0;
+        System.out.println("Round Robin Scheduling with time quantum: " + timeQuantum);
+        while (!queue.isEmpty()) {
+            process current = queue.poll();
+            int index = processes.indexOf(current);
+
+            if (remainingTime[index] > 0) {
+                int executionTime = Math.min(timeQuantum, remainingTime[index]);
+                time += executionTime;
+                remainingTime[index] -= executionTime;
+
+                System.out.println("Time " + (time - executionTime) + " - " + time +
+                        ": Process ID " + current.getId() + " executed for " + executionTime + " units");
+
+                if (remainingTime[index] > 0) {
+                    queue.add(current); // still has remaining burst time
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+package com.cloudism.scheduler;
+
+public class process {
+    private int id;
+    private int arrivalTime;
+    private int burstTime;
+
+    public process(int id, int arrivalTime, int burstTime) {
+        this.id = id;
+        this.arrivalTime = arrivalTime;
+        this.burstTime = burstTime;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public int getBurstTime() {
+        return burstTime;
+    }
+}
+process.class
